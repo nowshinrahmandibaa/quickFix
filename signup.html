@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up | QuickFix</title>
+    <link rel="stylesheet" href="main-style.css">
+    <style>
+        .auth-card { max-width: 450px; margin: 50px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: var(--shadow); }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .divider { text-align: center; margin: 20px 0; position: relative; }
+        .divider::before { content: ""; width: 100%; height: 1px; background: #ddd; position: absolute; top: 50%; left: 0; z-index: 1; }
+        .divider span { background: white; padding: 0 10px; position: relative; z-index: 2; color: #777; }
+        .social-btn { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; background: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .social-btn:hover { background: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <div class="auth-card">
+        <h2 style="text-align: center;">Create Account</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button class="btn btn-primary" style="width: 100%;">Sign Up</button>
+        </form>
+
+        <div class="divider"><span>OR</span></div>
+
+        <button class="social-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" width="20"> Sign in with Google
+        </button>
+        
+        <button class="social-btn" onclick="alert('Phone verification coming soon!')">
+            <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" width="20"> Sign in with Phone
+        </button>
+
+        <p style="text-align: center; margin-top: 15px;">Already have an account? <a href="loginn.html">Login</a></p>
+    </div>
+</body>
+</html>
