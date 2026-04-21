@@ -82,7 +82,7 @@ if(!isset($_SESSION['user'])){
 </div>
 
 <script>
-// Filter
+
 function filter(){
     let val = document.getElementById('serviceInput').value.toLowerCase();
     let cards = document.getElementsByClassName('card');
@@ -91,7 +91,7 @@ function filter(){
     }
 }
 
-// Booking
+
 function bookService(service){
     fetch('book-service.php',{
         method:'POST',
@@ -109,10 +109,10 @@ function bookService(service){
 
 function closeModal(){ document.getElementById('bookingModal').style.display='none'; }
 
-// Logout
+
 function logout(){ window.location.href='logout.php'; }
 
-// Close modal when clicking outside
+
 window.onclick = function(event){
     if(event.target==document.getElementById('bookingModal')) closeModal();
 }

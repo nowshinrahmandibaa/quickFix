@@ -15,7 +15,7 @@
     --radius: 12px;
 }
 
-/* --- Base Reset --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Modern Navigation (Flexbox) --- */
+
 nav {
     background: rgba(27, 38, 59, 0.95); /* Semi-transparent */
     backdrop-filter: blur(10px);        /* Glass effect */
@@ -82,7 +82,7 @@ nav ul li a:hover {
     padding: 2rem 0;
 }
 
-/* --- Buttons --- */
+
 .btn {
     padding: 12px 24px;
     border-radius: var(--radius);
@@ -120,7 +120,7 @@ nav ul li a:hover {
     color: var(--white);
 }
 
-/* --- Inputs & Forms --- */
+
 input, select, textarea {
     width: 100%;
     padding: 14px;
@@ -137,7 +137,7 @@ input:focus {
     box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
 }
 
-/* --- Cards (Flex/Grid) --- */
+
 .card {
     background: var(--white);
     border-radius: var(--radius);
@@ -152,20 +152,20 @@ input:focus {
     box-shadow: var(--shadow-md);
 }
 
-/* --- Responsive Helpers --- */
+
 @media (max-width: 768px) {
     nav {
         padding: 1rem 5%;
     }
     nav ul {
-        display: none; /* Mobile menu logic can be added later */
+        display: none; 
     }
     .container {
         width: 95%;
     }
 }
 
-/* --- Animations --- */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
